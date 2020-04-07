@@ -1,0 +1,95 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+<div>
+  <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+    -
+  </button>
+
+  <input type="number" name="number" min="0" max="100" value="0">
+
+  <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+    +
+  </button>
+</div>
+
+
+input {
+  text-align:center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+
+<div class="divTable scoreboard">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell">cell1_1</div>
+<div class="divTableCell">cell2_1</div>
+</div>
+</div>
+</div>
+
+div.scoreboard {
+  background-color: #EECBCB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.divTable.scoreboard .divTableCell, .divTable.scoreboard .divTableHead {
+  border: 4px solid #AAAAAA;
+  padding: 10px 2px;
+}
+.divTable.scoreboard .divTableBody .divTableCell {
+  font-size: 13px;
+  font-weight: bold;
+}
+.divTable.scoreboard .divTableCell:nth-child(even) {
+  background: #D0E4F5;
+}
+.scoreboard .tableFootStyle {
+  font-size: 14px;
+}
+.scoreboard .tableFootStyle .links {
+	 text-align: right;
+}
+.scoreboard .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.scoreboard.outerTableFooter {
+  border-top: none;
+}
+.scoreboard.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
