@@ -22,11 +22,12 @@ button, select, span.label {
 		font-size: 1rem;
 }
 
-input {
-		/* padding: .5rem; */
+input[type=text] {
+		padding: .5rem;
 		border-radius: 2px;
 		outline: 0;
-		border: 1px #DDDDDD solid;
+		border: 3px #EECBCB solid;
+		font-style: bold;
 }
 
 select {
@@ -167,6 +168,7 @@ input[type=number]{
 		font-size: 32px;
 		font-style: bold; 
 		-moz-appearance: textfield;
+		border: 1px #DDDDDD solid;
 }
 
 input::-webkit-outer-spin-button,
@@ -192,25 +194,7 @@ div.scoreboard {
 .divTable.scoreboard .divTableCell:nth-child(even) {
 		background: #D0E4F5;
 }
-.scoreboard .tableFootStyle {
-		font-size: 14px;
-}
-.scoreboard .tableFootStyle .links {
-		text-align: right;
-}
-.scoreboard .tableFootStyle .links a{
-		display: inline-block;
-		background: #1C6EA4;
-		color: #FFFFFF;
-		padding: 2px 8px;
-		border-radius: 5px;
-}
-.scoreboard.outerTableFooter {
-		border-top: none;
-}
-.scoreboard.outerTableFooter .tableFootStyle {
-		padding: 3px 5px; 
-}
+
 /* DivTable.com */
 .divTable{ display: table; }
 .divTableRow { display: table-row; }
