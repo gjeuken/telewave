@@ -33,6 +33,10 @@
 				<button id="commit" onclick="button_guess()">Guess</button>
 				<button id="reveal" onclick="button_peak()">Peek</button>
 				<button id="reset" onclick="clearboard()">Clear</button>
+				<div class="percentages-container">
+						<span id="percentagesText" class="label">Percentages?</span>
+						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
+				</div>
 			</div>
 		</div>
 		<script src="scripts/jquery-3.4.1.min.js"></script>

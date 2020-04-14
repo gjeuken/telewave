@@ -90,4 +90,12 @@ function update_seed(){
 }
 
 
-
+function update_percentages(){
+		var checkbox = document.getElementById("percentages");
+		var text = document.getElementById("guessdisp");
+		if (checkbox.checked == true){
+				text.style.display = "block";
+		} else {
+				text.style.display = "none";
+		}
+}
