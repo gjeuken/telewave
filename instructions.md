@@ -10,5 +10,5 @@
 	* Guess: Compares your current position of the dial against the target, and shows you how many points you got.
 	* Peek: reveals the target.
 	* Clear: Erases the target and guess from the board.
-	* Percentages: Toggles the display of the percentages under the dial. (The official rulebook advises against using percentages to turn the dial, yet I've found that they make playing via videocall much easier.)
+	* Percentages: Toggles the display of the percentages under the dial. (The official rulebook advises against using percentages to discuss the dial, yet I've found that they make playing via videocall much easier.)
 	* There are two manual score boards at the bottom for keeping track of your points.
