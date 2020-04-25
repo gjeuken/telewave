@@ -5,7 +5,7 @@
 	* This means that when two people input the same seed, they will have the same target position and words.
 	* It is possible then for the **clue giver** to open the board on his own computer/phone and **peek** at the target without having to share it in the videocall.
 * Functions:
-	* Seed: generates a unique board. The seed can be **any combination of numbers and letters**.
+	* Seed: generates a unique board. The seed can be **any combination of numbers and letters**. (Tip: using words makes it easier to share the seed.)
 	* New clue: generates a new random seed.
 	* Guess: Compares your current position of the dial against the target, and shows you how many points you got.
 	* Peek: reveals the target.
