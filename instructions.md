@@ -1,4 +1,4 @@
-# Bacis instructions
+# Basic instructions
 
 * [Good video explaining the game](https://youtu.be/KuL_R60_320?t=225)
 * The basis of this implementation is that **each seed generates a unique board**.
