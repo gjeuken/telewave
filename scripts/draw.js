@@ -71,8 +71,8 @@ function between(x, min, max) {
 		return x >= min && x <= max;
 }
 
-function button_peak(){
-		if (window.confirm("Are you sure you want to peak?")) {
+function button_peek(){
+		if (window.confirm("Are you sure you want to peek?")) {
 				draw(randpos);
 		}
 }
