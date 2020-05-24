@@ -6,7 +6,7 @@
 * [![Dutch](icons/nl.png) Dutch](nl.html)
 * [![Italina](icons/it.png) Italian](it.html)
 * [![Chinese](icons/cn.png) Chinese](cn.html)
-* [![Danish](icons/dk.png) Danish](danish.html)
+* [![Danish](icons/dk.png) Danish](dk.html)
 * [![Hungarian](icons/hu.png) Hungarian](hu.html)
 * [![Catalan](icons/Catalonia.png) Catalan](ca.html)
 
