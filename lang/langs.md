@@ -1,14 +1,14 @@
 # Other languages
 
-* [![Spanish](icons/es.png) Spanish](spanish.html)
-* [![French](icons/fr.png) French](french.html)
-* [![German](icons/de.png) German](german.html)
-* [![Dutch](icons/nl.png) Dutch](dutch.html)
-* [![Italina](icons/it.png) Italian](italian.html)
-* [![Chinese](icons/cn.png) Chinese](chinese.html)
+* [![Spanish](icons/es.png) Spanish](es.html)
+* [![French](icons/fr.png) French](fr.html)
+* [![German](icons/de.png) German](de.html)
+* [![Dutch](icons/nl.png) Dutch](nl.html)
+* [![Italina](icons/it.png) Italian](it.html)
+* [![Chinese](icons/cn.png) Chinese](cn.html)
 * [![Danish](icons/dk.png) Danish](danish.html)
-* [![Hungarian](icons/hu.png) Hungarian](hungarian.html)
-* [![Catalan](icons/Catalonia.png) Catalan](catalan.html)
+* [![Hungarian](icons/hu.png) Hungarian](hu.html)
+* [![Catalan](icons/Catalonia.png) Catalan](ca.html)
 
 This is currently work in progress, so far only the cards have been translated.
 
