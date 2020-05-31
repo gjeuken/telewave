@@ -1,3 +1,5 @@
+const urlParams = new URLSearchParams(window.location.search);
+
 var randpos = 0
 
 //init
@@ -5,7 +7,10 @@ $("#seed").keyup(function() {
 		fire();
 });
 
-$("#seed").val(Math.floor(Math.random() * 1000));
+
+$("#seed").val(
+	urlParams.get('seed') || Math.floor(Math.random() * 1000)
+);
 fire();
 
 function clearboard(){
