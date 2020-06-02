@@ -1,6 +1,6 @@
 # Languages
 
-| [![English](icons/gb.png)<br>English](../index.html) | | |
+| [![English](icons/gb.png)<br>English](../) | | |
 |:-:|:-:|:-:|
 | [![Spanish](icons/es.png)<br>Spanish](es.html) | [![French](icons/fr.png)<br>French](fr.html) | [![Dutch](icons/nl.png)<br>Dutch](nl.html) |
 | [![German](icons/de.png)<br>German](de.html) | [![Italian](icons/it.png)<br>Italian](it.html) |  [![Chinese](icons/cn.png)<br>Chinese](cn.html) |
