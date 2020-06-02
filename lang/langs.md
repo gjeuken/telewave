@@ -1,15 +1,11 @@
 # Languages
 
-* [![English](icons/gb.png) English](../index.html)
-* [![Spanish](icons/es.png) Spanish](es.html)
-* [![French](icons/fr.png) French](fr.html)
-* [![German](icons/de.png) German](de.html)
-* [![Dutch](icons/nl.png) Dutch](nl.html)
-* [![Italina](icons/it.png) Italian](it.html)
-* [![Chinese](icons/cn.png) Chinese](cn.html)
-* [![Danish](icons/dk.png) Danish](dk.html)
-* [![Hungarian](icons/hu.png) Hungarian](hu.html)
-* [![Catalan](icons/Catalonia.png) Catalan](ca.html)
+| | | |
+|:-:|:-:|:-:|
+| [![English](icons/gb.png)<br>English](../index.html) | [![Spanish](icons/es.png)<br>Spanish](es.html) | [![French](icons/fr.png)<br>French](fr.html) |
+| [![Dutch](icons/nl.png)<br>Dutch](nl.html) | [![German](icons/de.png)<br>German](de.html) | [![Italian](icons/it.png)<br>Italian](it.html) |
+| [![Chinese](icons/cn.png)<br>Chinese](cn.html) | [![Danish](icons/dk.png)<br>Danish](dk.html) | [![Hungarian](icons/hu.png)<br>Hungarian](hu.html) |
+| [![Catalan](icons/Catalonia.png)<br>Catalan](ca.html) |  |  |
 
 This is currently work in progress, so far only the cards have been translated from English.
 
