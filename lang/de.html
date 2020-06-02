@@ -28,6 +28,7 @@
 				<div class="seed-container">
 					<span class="label">Seed</span>
 					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
+					<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
 				</div>
 				<button id="new" onclick="update_seed()">New clue</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
@@ -38,6 +39,7 @@
 						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
 				</div>
 				<a href="instructions_de">Instructions</a>
+				<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
 			</div>
 		</div>
 		<script src="../scripts/jquery-3.4.1.min.js"></script>
