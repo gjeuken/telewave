@@ -1,5 +1,6 @@
-# Other languages
+# Languages
 
+* [![English](icons/gb.png) English](../index.html)
 * [![Spanish](icons/es.png) Spanish](es.html)
 * [![French](icons/fr.png) French](fr.html)
 * [![German](icons/de.png) German](de.html)
@@ -10,8 +11,6 @@
 * [![Hungarian](icons/hu.png) Hungarian](hu.html)
 * [![Catalan](icons/Catalonia.png) Catalan](ca.html)
 
-This is currently work in progress, so far only the cards have been translated.
+This is currently work in progress, so far only the cards have been translated from English.
 
 I welcome help on the translation of the interface, as well as additional languages. :)
-
-
