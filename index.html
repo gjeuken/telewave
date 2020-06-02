@@ -28,13 +28,14 @@
 				<div class="seed-container">
 					<span class="label">Seed</span>
 					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
+					<input type="image" onclick="copySeedUrl()" src="img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
 				</div>
 				<button id="new" onclick="update_seed()">New clue</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
 				<button id="reveal" onclick="button_peek()">Peek</button>
 				<button id="reset" onclick="clearboard()">Clear</button>
 				<div class="percentages-container">
-						<span id="percentagesText" class="label">Percentages?</span>
+						<span id="percentagesText" class="label">Percentage</span>
 						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
 				</div>
 				<a href="instructions">Instructions</a>

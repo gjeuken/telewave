@@ -1,5 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 
+if (urlParams.get('seed')){
+		window.history.replaceState({}, '', location.pathname)
+} 
+
 var randpos = 0
 
 //init
@@ -50,3 +54,27 @@ document.getElementById('seed').onkeypress = function(e) {
 				return false;
 		}
 }
+
+function copySeedUrl(){
+		var seed = document.getElementById("seed").value;
+		const seedUrl = `${window.location.origin}${window.location.pathname}?seed=${seed}`;
+		copyStringToClipboard(seedUrl);
+}
+
+function copyStringToClipboard (str) {
+   // Create new element
+   var el = document.createElement('textarea');
+   // Set value (string to be copied)
+   el.value = str;
+   // Set non-editable to avoid focus and move outside of view
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(el);
+   // Select text inside element
+   el.select();
+   // Copy text to clipboard
+   document.execCommand('copy');
+   // Remove temporary element
+   document.body.removeChild(el);
+}
+

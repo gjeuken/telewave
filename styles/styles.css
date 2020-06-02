@@ -203,3 +203,7 @@ div.scoreboard {
 .divTableHeading { display: table-header-group;}
 .divTableFoot { display: table-footer-group;}
 .divTableBody { display: table-row-group;}
+
+.seed-container input{
+		vertical-align: middle;
+}
