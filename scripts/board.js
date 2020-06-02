@@ -13,7 +13,7 @@ $("#seed").keyup(function() {
 
 
 $("#seed").val(
-	urlParams.get('seed') || Math.floor(Math.random() * 1000)
+	urlParams.get('seed') || Math.floor(Math.random() * 10000)
 );
 fire();
 

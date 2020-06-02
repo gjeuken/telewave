@@ -85,7 +85,8 @@ function button_guess(){
 }
 
 function update_seed(){
-		$("#seed").val(Math.floor(Math.random() * 1000));
+		Math.seedrandom();
+		$("#seed").val(Math.floor(Math.random() * 10000));
 		fire();
 }
 
