@@ -75,6 +75,7 @@ function button_peek(){
 		if (window.confirm("Are you sure you want to peek?")) {
 				draw(randpos);
 		}
+		gtag('event', 'peek');
 }
 
 
@@ -82,12 +83,14 @@ function button_guess(){
 		if (window.confirm("Is this your final guess?")) {
 				drawguess();
 		}
+		gtag('event', 'guess');
 }
 
 function update_seed(){
 		Math.seedrandom();
 		$("#seed").val(Math.floor(Math.random() * 10000));
 		fire();
+		gtag('event', 'new_clue');
 }
 
 
@@ -99,4 +102,5 @@ function update_percentages(){
 		} else {
 				text.style.display = "none";
 		}
+		gtag('event', 'display_percentage');
 }
