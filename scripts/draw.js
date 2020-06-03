@@ -104,3 +104,8 @@ function update_percentages(){
 		}
 		gtag('event', 'display_percentage');
 }
+
+function button_clear(){
+		clearboard();
+		gtag('event', 'clear_board');
+}
