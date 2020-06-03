@@ -43,6 +43,7 @@ function fire() {
 
 		document.getElementById("board").innerHTML = '<center><table class="word"><tbody><tr><td> &#10229 <br />' + words[0] + '</td><td> &#10230 <br />' + words[1] + '</td></tr></tbody></table></center>'
 
+		gtag('event', 'fire');
 }
 
 //enable pressing 'Enter' on seed field
