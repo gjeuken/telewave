@@ -59,6 +59,7 @@ function copySeedUrl(){
 		var seed = document.getElementById("seed").value;
 		const seedUrl = `${window.location.origin}${window.location.pathname}?seed=${seed}`;
 		copyStringToClipboard(seedUrl);
+		gtag('event', 'copy_seed');
 }
 
 function copyStringToClipboard (str) {
