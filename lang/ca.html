@@ -1,104 +1,110 @@
 <!doctype html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
 
-		<title>Telewave</title>
-		<meta name="description" content="Telewave">
-		<meta name="author" content="Gus">
-		<link rel="stylesheet" href="../styles/styles.css?v=1.0">
+<head>
+	<meta charset="utf-8">
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162367629-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+	<title>Telewave</title>
+	<meta name="description" content="Telewave">
+	<meta name="author" content="Gus">
+	<link rel="stylesheet" href="../styles/styles.css?v=1.0">
 
-			gtag('config', 'UA-162367629-2');
-		</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162367629-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	</head>
+		gtag('config', 'UA-162367629-2');
+	</script>
 
-	<body>
+</head>
 
-		<div>
-			<div id='header'>
-				<div class="seed-container">
-					<span class="label">Seed</span>
-					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
-					<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
-				</div>
-				<button id="new" onclick="update_seed()">New clue</button>
-				<button id="commit" onclick="button_guess()">Guess</button>
-				<button id="reveal" onclick="button_peek()">Peek</button>
-				<button id="reset" onclick="clearboard()">Clear</button>
-				<div class="percentages-container">
-						<span id="percentagesText" class="label">Percentage</span>
-						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
-				</div>
-				<a href="instructions_ca">Instructions</a>
-				<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
+<body>
+
+	<div>
+		<div id='header'>
+			<div class="seed-container">
+				<span class="label">Room</span>
+				<input type="text" id="room" placeholder="room" size="8" autofocus>
+				<span class="label">Seed</span>
+				<input type="text" id="seed" placeholder="seed" size="8" autofocus>
+				<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png"
+					alt="Copy link with seed" width=24px height=24px>
 			</div>
+			<button id="new" onclick="update_seed()">New clue</button>
+			<button id="commit" onclick="button_guess()">Guess</button>
+			<button id="reveal" onclick="button_peek()">Peek</button>
+			<button id="reset" onclick="clearboard()">Clear</button>
+			<div class="percentages-container">
+				<span id="percentagesText" class="label">Percentage</span>
+				<input type="checkbox" id="percentages" checked onclick="update_percentages()">
+			</div>
+			<a href="instructions_ca">Instructions</a>
+			<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
 		</div>
-		<script src="../scripts/jquery-3.4.1.min.js"></script>
-		<script src="../scripts/seedrandom.js"></script>
-		<script src="translations.js"></script>
-		<script> data = catalan; </script>
+	</div>
+	<script src="../scripts/jquery-3.4.1.min.js"></script>
+	<script src="../scripts/seedrandom.js"></script>
+	<script src="translations.js"></script>
+	<script> data = catalan; </script>
 
-		<canvas id="wave" width="1000" height="150" style="border:5px solid #d3d3d3;">
-		</canvas>
-		<div class="slidecontainer">
-			<input type="range" min="0" max="1000" value="500" class="slider" id="guesser" oninput="guessdisp.value = Math.round(guesser.value/10)">
-			<output id="guessdisp">50</output>
-		</div>
-		<div id="board"></div>
-		<div id="score"></div>
-		<div id="scoreboard">
-			<div class="divTable scoreboard">
-				<div class="divTableBody">
-					<div class="divTableRow">
-						<div class="divTableCell">Team 1
-							<div>
-								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
-									-
-								</button>
+	<canvas id="wave" width="1000" height="150" style="border:5px solid #d3d3d3;">
+	</canvas>
+	<div class="slidecontainer">
+		<input type="range" min="0" max="1000" value="500" class="slider" id="guesser"
+			oninput="guessdisp.value = Math.round(guesser.value/10)">
+		<output id="guessdisp">50</output>
+	</div>
+	<div id="board"></div>
+	<div id="score"></div>
+	<div id="scoreboard">
+		<div class="divTable scoreboard">
+			<div class="divTableBody">
+				<div class="divTableRow">
+					<div class="divTableCell">Team 1
+						<div>
+							<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+								-
+							</button>
 
-								<input type="number" name="number" min="0" max="100" value="0">
+							<input type="number" name="number" min="0" max="100" value="0">
 
-								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
-									+
-								</button>
-							</div>
-
-						</div>
-
-						<div class="divTableCell">Team 2
-							<div>
-								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
-									-
-								</button>
-
-								<input type="number" name="number" min="0" max="100" value="0">
-
-								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
-									+
-								</button>
-							</div>
-
+							<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+								+
+							</button>
 						</div>
 
 					</div>
+
+					<div class="divTableCell">Team 2
+						<div>
+							<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+								-
+							</button>
+
+							<input type="number" name="number" min="0" max="100" value="0">
+
+							<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+								+
+							</button>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
-
-
 		</div>
 
-		<script src="../scripts/board.js"></script>
-		<script src="../scripts/draw.js"></script>
-		</div>
 
-	</body>
+	</div>
+
+	<script src="../scripts/board.js"></script>
+	<script src="../scripts/draw.js"></script>
+	</div>
+
+</body>
+
 </html>
