@@ -1,15 +1,15 @@
-# Basic instructions
+# Instruções Básicas
 
-* [Good video explaining the game](https://youtu.be/KuL_R60_320?t=225)
-* The basis of this implementation is that **each seed generates a unique board**.
-	* This means that when two people input the same seed, they will have the same target position and words.
-	* It is possible then for the **clue giver** to open the board on his own computer/phone and **peek** at the target without having to share it in the videocall.
-	* The copy button besides the seed will automatically copy a link with the current seed to the clipboard.
-* Functions:
-	* Seed: generates a unique board. The seed can be **any combination of numbers and letters**. (Tip: using words makes it easier to share the seed.)
-	* New clue: generates a new random seed.
-	* Guess: Compares your current position of the dial against the target, and shows you how many points you got.
-	* Peek: reveals the target.
-	* Clear: Erases the target and guess from the board.
-	* Percentages: Toggles the display of the percentages under the dial. (The official rulebook advises against using percentages to discuss the dial, yet I've found that they make playing via videocall much easier.)
-	* There are two manual score boards at the bottom for keeping track of your points.
+* [Um bom vídeo explicando as regras (Em inglês)](https://youtu.be/KuL_R60_320?t=225)
+* A base dessa implementação é que: **cada semente corresponde a um único jogo**.
+	* Ou seja, se duas pessoas colocarem a mesma semente, elas terão as mesmas palavras binárias e o mesmo alvo
+	* Isso permite que o **responsável pela pista** **veja** o alvo em seu computador / celular sem ter que mostrar na videochamada. 
+	* O botão de copiar coloca automaticamente, em sua área de transferência, o link do site com a sua atual semente. 
+* Funções:
+	* Seed: corresponde à semente do jogo. As sementes podem ser formadas por **qualquer combinação de números e letras**. (Dica: O uso de palavras facilita o compartilhamento da semente.)
+	* New clue: gera uma nova semente aleatória.
+	* Guess: Compara sua posição atual com o alvo e mostra quantos pontos você obteve.
+	* Peek: Revela o alvo.
+	* Clear: Esconde o alvo.
+	* Percentage: Exibe ou esconde o indicador das porcentagens. (O livro de regras oficial desaconselha o uso de porcentagens, entretanto, elas facilitam na jogabilidade por videochamada.)
+	* Há dois placares manuais, no canto inferior esquerdo, para a marcação dos pontos.
