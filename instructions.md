@@ -1,5 +1,6 @@
 # Basic instructions
 
+(The game is avaliable in [many languages](/lang/langs))
 * [Good video explaining the game](https://youtu.be/KuL_R60_320?t=225)
 * The basis of this implementation is that **each seed generates a unique board**.
 	* This means that when two people input the same seed, they will have the same target position and words.
