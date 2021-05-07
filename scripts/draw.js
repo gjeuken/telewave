@@ -9,7 +9,6 @@ var recW2 = 3*binW;
 var recW3 = 5*binW;
 
 
-
 function position(x){
 		return 5 + (x/1005)*cw;
 }
@@ -89,6 +88,16 @@ function button_guess(){
 function update_seed(){
 		Math.seedrandom();
 		$("#seed").val(Math.floor(Math.random() * 10000));
+		fire();
+		gtag('event', 'update_seed');
+}
+
+function new_clue(){
+		var seed = document.getElementById("seed").value;
+	    var clue_num = 0;
+		if (seed.split('(')[1]) { clue_num = seed.split('(')[1].split(')')[0] }
+		clue_num++;
+		$("#seed").val(seed.split('(')[0].concat('(').concat(clue_num).concat(')'));
 		fire();
 		gtag('event', 'new_clue');
 }
