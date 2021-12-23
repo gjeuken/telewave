@@ -28,7 +28,7 @@
 						<span id="percentagesText" class="label">Percentage</span>
 						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
 				</div>
-				<a href="instructions_es">Instructions</a>
+				<a href="instructions_sv">Instructions</a>
 				<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
 			</div>
 		</div>
@@ -43,31 +43,13 @@
 			<input type="range" min="0" max="1000" value="500" class="slider" id="guesser" oninput="guessdisp.value = Math.round(guesser.value/10)">
 			<output id="guessdisp">50</output>
 		</div>
-		<div id="board">
-			<center>
-				<table class="word">
-					<thead>
-						<tr>
-							<th>&#10229</th>
-							<th>&#10230</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr id="wordBoxes">
-							<td id="word1"></td>
-							<td id="word2"></td>
-						</tr>
-					</tbody>
-				</table>
-			</center>
-		</div>
+		<div id="board"></div>
 		<div id="score"></div>
 		<div id="scoreboard">
 			<div class="divTable scoreboard">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell">
-							<div contenteditable="true">Team 1</div>
+						<div class="divTableCell">Team 1
 							<div>
 								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
 									-
@@ -82,8 +64,7 @@
 
 						</div>
 
-						<div class="divTableCell">
-							<div contenteditable="true"> Team 2</div>
+						<div class="divTableCell">Team 2
 							<div>
 								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
 									-
@@ -105,8 +86,8 @@
 
 		</div>
 
-		<script src="scripts/board.js"></script>
-		<script src="scripts/draw.js"></script>
+		<script src="../scripts/board.js"></script>
+		<script src="../scripts/draw.js"></script>
 		</div>
 
 	</body>
