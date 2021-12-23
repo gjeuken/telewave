@@ -83,7 +83,7 @@ a {
 }
 
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
+  width: 1000px; /* Width of the outside container */
   margin: 0 auto;
   text-align: center;
 }
