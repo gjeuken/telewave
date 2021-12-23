@@ -112,6 +112,6 @@ function update_percentages() {
 
 function button_clear() {
 	clearboard();
-	document.getElementById("guesser").value = 500;
+	document.getElementById("guesser").value = 50;
 	document.getElementById("guessdisp").value = 50;
 }
