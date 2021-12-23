@@ -109,9 +109,3 @@ function update_percentages() {
 		text.style.display = "none";
 	}
 }
-
-function button_clear() {
-	clearboard();
-	document.getElementById("guesser").value = 500;
-	document.getElementById("guessdisp").value = 50;
-}
