@@ -1,209 +1,232 @@
 * {
-		box-sizing:border-box;
+ box-sizing: border-box;
 }
 
-html, body {
-		height: 100vh;
+html,
+body {
+  height: 100vh;
 }
 
 body {
-		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		padding: 2rem;
-		margin: 0;
-		font-size: 1.3rem;
-		color: #444444;
-		display: flex;
-		flex-direction: column;
+ font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
-button, select, span.label {
-		outline: 0;
-		border: 0;
-		font-size: 1rem;
+button,
+select,
+span.label {
+  outline: 0;
+  border: 0;
+  font-size: 1rem;
 }
 
-input[type=text] {
-		padding: .5rem;
-		border-radius: 2px;
-		outline: 0;
-		border: 3px #EECBCB solid;
-		font-style: bold;
+#wave {
+  width: 1000px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 2px;
+  outline: 0;
+  border: 3px #eecbcb solid;
+  font-style: bold;
 }
 
 select {
-		border: 1px #DDDDDD solid;
-		margin: 0 1rem;
+  border: 1px #dddddd solid;
+  margin: 0 1rem;
 }
 
 button {
-		background: #DDDDDD;
-		transition: background .2s ease;
-		border-radius: 2px;
-		font-size: 1rem;
-		padding: .5rem 1rem;
+  background: #dddddd;
+  transition: background 0.2s ease;
+  border-radius: 2px;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 button:hover {
-		background: #69F0AE;
-		cursor: pointer;
+  background: #69f0ae;
+  cursor: pointer;
 }
 
 input {
-		font-size: 1rem;
+  font-size: 1rem;
 }
 
 input:focus {
-		outline: 0;
+  outline: 0;
 }
 
 a {
-		text-decoration: none;
-		color: #444444;
+  text-decoration: none;
+  color: #444444;
 }
 
 #header {
-		display: flex;
-		align-items: center;
-		margin-bottom: 2rem;
-		justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 #header a {
-		font-weight: bold;
-		font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-
-
 .slidecontainer {
-		width: 100%; /* Width of the outside container */
-		text-align: center;
+  width: 1000px; /* Width of the outside container */
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* The slider itself */
 .slider {
-		-webkit-appearance: none;  /* Override default CSS styles */
-		appearance: none;
-		width: 100%; /* Full-width */
-		height: 50px; /* Specified height */
-		background: #d3d3d3; /* Grey background */
-		outline: none; /* Remove outline */
-		opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-		-webkit-transition: .2s; /* 0.2 seconds transition on hover */
-		transition: opacity .2s;
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 50px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
 }
 
 /* Mouse-over effects */
 .slider:hover {
-		opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-		-webkit-appearance: none; /* Override default look */
-		appearance: none;
-		width: 10px; /* Set a specific slider handle width */
-		height: 50px; /* Slider handle height */
-		background: #d42838; /* Green background */
-		cursor: pointer; /* Cursor on hover */
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: #d42838; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-		width: 10x; /* Set a specific slider handle width */
-		height: 50px; /* Slider handle height */
-		background: #d42838; /* Green background */
-		cursor: pointer; /* Cursor on hover */
+  width: 10x; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: #d42838; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }
 
 
 #board {
-		width: 100%;
-		/* height: 250px; */
-		/* display: flex; */
-		/* border: 1px #DDDDDD solid; */
-		/* border-radius: 2px; */
-		/* flex: 1; */
+  width: 100%;
 }
 
 table.word {
-		border: 3px solid #000000;
-		background-color: #CBFDB8;
-		width: 50%;
-		height: 100px;
-		text-align: center;
-		border-collapse: collapse;
-		table-layout: fixed;
+ background-color: #cbfdb8;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 10px 10px 25px #000000;
+  width: 32vw;
+  height: 18vw;
+  min-height: 270px;
+  min-width: 430px;
+  text-align: center;
+  table-layout: fixed;
+  overflow: hidden;
+  font-size: 36px;
 }
-table.word td, table.word th {
-		border: 3px solid #000000;
-		padding: 5px 5px;
+table.word tbody {
+  vertical-align: top;
 }
-table.word tbody td {
-		font-size: 24px;
-		font-weight: bold;
+table.word th,
+td {
+  padding: 1em;
 }
+table.word td {
+  width: 100px;
+  line-height: 1.5em;
+}
+table.word th:nth-child(even),
 table.word td:nth-child(even) {
-		background: #F5E1B4;
+  background: #f5e1b4;
 }
-
 
 #score {
-		width: 100%;
-		height: 100px;
-		text-align: center;
-		padding: 40px 0;
-		/* height: 250px; */
-		/* display: flex; */
-		/* border: 1px #DDDDDD solid; */
-		/* border-radius: 2px; */
-		/* flex: 1; */
-		font-size: 24px;
-		font-weight: bold;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-input[type=number]{
-		width: 50px;
-		text-align: center;
-		border-radius:10px;
-		font-size: 32px;
-		font-style: bold; 
-		-moz-appearance: textfield;
-		border: 1px #DDDDDD solid;
+input[type="number"] {
+  width: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 32px;
+  font-style: bold;
+  -moz-appearance: textfield;
+  border: 1px #dddddd solid;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 div.scoreboard {
-		background-color: #EECBCB;
-		width: 500px;
-		text-align: center;
-		border-collapse: collapse;
+  background-color: #eecbcb;
+	width: 500px;
+	margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
 }
-.divTable.scoreboard .divTableCell, .divTable.scoreboard .divTableHead {
-		border: 4px solid #AAAAAA;
-		padding: 10px 2px;
+.divTable.scoreboard .divTableCell,
+.divTable.scoreboard .divTableHead {
+  border: 4px solid #aaaaaa;
+  padding: 10px 2px;
 }
 .divTable.scoreboard .divTableBody .divTableCell {
-		font-size: 20px;
-		font-weight: bold;
-}
+  font-size: 20px;
+  font-weight: bold;
+}}
 .divTable.scoreboard .divTableCell:nth-child(even) {
-		background: #D0E4F5;
+  background: #d0e4f5;
 }
 
 /* DivTable.com */
-.divTable{ display: table; }
-.divTableRow { display: table-row; }
-.divTableHeading { display: table-header-group;}
-.divTableCell, .divTableHead { display: table-cell;}
-.divTableHeading { display: table-header-group;}
-.divTableFoot { display: table-footer-group;}
-.divTableBody { display: table-row-group;}
+.divTable {
+  display: table;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  display: table-cell;
+}
+.divTableHeading {
+  display: table-header-group;
+}
+.divTableFoot {
+  display: table-footer-group;
+}
+.divTableBody {
+  display: table-row-group;
+}
 
-.seed-container input{
-		vertical-align: middle;
+.seed-container input {
+  vertical-align: middle;
 }
