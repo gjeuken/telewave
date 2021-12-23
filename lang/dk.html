@@ -22,7 +22,7 @@
 				</div>
 				<button id="new" onclick="new_clue()">New Card</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
-				<button id="reveal" onmousedown="button_peek()" ontouchstart="button_peek()" onmouseup="button_clear()" ontouchend="button_clear()">Peek</button>
+				<button id="reveal" onmousedown="button_peek()" ontouchstart="button_peek()" onmouseup="clearboard()" ontouchend="clearboard()">Peek</button>
 				<button id="reset" onclick="clearboard()">Clear</button>
 				<div class="percentages-container">
 						<span id="percentagesText" class="label">Percentage</span>
