@@ -16,9 +16,9 @@
 			<div id='header'>
 				<div class="seed-container">
 					<span class="label">Seed</span>
-					<input type="image" onclick="update_seed()" src="img/refresh.png" alt="Update seed" width=24px height=24px>
+					<input type="image" onclick="update_seed()" src="../img/refresh.png" alt="Update seed" width=24px height=24px>
 					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
-					<input type="image" onclick="copySeedUrl()" src="img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
+					<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
 				</div>
 				<button id="new" onclick="new_clue()">New Card</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
@@ -28,12 +28,12 @@
 						<span id="percentagesText" class="label">Percentage</span>
 						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
 				</div>
-				<a href="instructions">Instructions</a>
-				<a href="lang/langs"><img src="lang/icons/translation.png" alt="Other languages" width=36px height=36px></a>
+				<a href="instructions_es">Instructions</a>
+				<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
 			</div>
 		</div>
-		<script src="scripts/jquery-3.4.1.min.js"></script>
-		<script src="scripts/seedrandom.js"></script>
+		<script src="../scripts/jquery-3.4.1.min.js"></script>
+		<script src="../scripts/seedrandom.js"></script>
 		<script src="translations.js"></script>
 		<script> data = Swedish; </script>		
 
