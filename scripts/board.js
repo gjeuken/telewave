@@ -39,8 +39,7 @@ function fire() {
 
 	document.getElementById("score").innerHTML = ""
 
-	document.getElementById("word1").textContent = words[0];
-	document.getElementById("word2").textContent = words[1];
+	document.getElementById("board").innerHTML = '<center><table class="word"><tbody><tr><td> &#10229 <br />' + words[0] + '</td><td> &#10230 <br />' + words[1] + '</td></tr></tbody></table></center>'
 
 	let colors = [
 		"#0C7C70",
