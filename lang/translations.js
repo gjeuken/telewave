@@ -2548,7 +2548,7 @@ portuguese = [
 ["Jogo subestimado","Jogo supervalorizado"]
 ]
 
-Swedish = [
+swedish = [
 ["Dålig","Bra"],
 ["Mildt beroendeframkallande","Mycket beroendeframkallande"],
 ["Varm","Kall"],
