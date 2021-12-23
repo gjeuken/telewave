@@ -6,8 +6,19 @@
 
 		<title>Telewave</title>
 		<meta name="description" content="Telewave">
-		<meta name="author" content="Gus, Frankie, Mikael, and Github contributors">
+		<meta name="author" content="Gus">
 		<link rel="stylesheet" href="../styles/styles.css?v=1.0">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162367629-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-162367629-2');
+		</script>
+
 	</head>
 
 	<body>
@@ -20,9 +31,9 @@
 					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
 					<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
 				</div>
-				<button id="new" onclick="new_clue()">New Card</button>
+				<button id="new" onclick="new_clue()">New clue</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
-				<button id="reveal" onmousedown="button_peek()" ontouchstart="button_peek()" onmouseup="clearboard()" ontouchend="clearboard()">Peek</button>
+				<button id="reveal" onclick="button_peek()">Peek</button>
 				<button id="reset" onclick="clearboard()">Clear</button>
 				<div class="percentages-container">
 						<span id="percentagesText" class="label">Percentage</span>
@@ -35,7 +46,7 @@
 		<script src="../scripts/jquery-3.4.1.min.js"></script>
 		<script src="../scripts/seedrandom.js"></script>
 		<script src="translations.js"></script>
-		<script> data = portuguese; </script>		
+		<script> data = portuguese; </script>
 
 		<canvas id="wave" width="1000" height="150" style="border:5px solid #d3d3d3;">
 		</canvas>
