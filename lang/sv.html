@@ -6,19 +6,8 @@
 
 		<title>Telewave</title>
 		<meta name="description" content="Telewave">
-		<meta name="author" content="Gus">
-		<link rel="stylesheet" href="../styles/styles.css?v=1.0">
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162367629-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-162367629-2');
-		</script>
-
+		<meta name="author" content="Gus, Frankie, Mikael, and Github contributors">
+		<link rel="stylesheet" href="styles/styles.css?v=1.0">
 	</head>
 
 	<body>
@@ -27,24 +16,24 @@
 			<div id='header'>
 				<div class="seed-container">
 					<span class="label">Seed</span>
-					<input type="image" onclick="update_seed()" src="../img/refresh.png" alt="Update seed" width=24px height=24px>
+					<input type="image" onclick="update_seed()" src="img/refresh.png" alt="Update seed" width=24px height=24px>
 					<input type="text" id="seed" placeholder="seed" size="8" autofocus>
-					<input type="image" onclick="copySeedUrl()" src="../img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
+					<input type="image" onclick="copySeedUrl()" src="img/clipboard-copy-512.png" alt="Copy link with seed" width=24px height=24px>
 				</div>
-				<button id="new" onclick="new_clue()">New clue</button>
+				<button id="new" onclick="new_clue()">New Card</button>
 				<button id="commit" onclick="button_guess()">Guess</button>
-				<button id="reveal" onclick="button_peek()">Peek</button>
-				<button id="reset" onclick="clearboard()">Clear</button>
+				<button id="reveal" onmousedown="button_peek()" ontouchstart="button_peek()" onmouseup="button_clear()" ontouchend="button_clear()">Peek</button>
+				<button id="reset" onclick="button_clear()">Clear</button>
 				<div class="percentages-container">
 						<span id="percentagesText" class="label">Percentage</span>
 						<input type="checkbox" id="percentages" checked onclick="update_percentages()">
 				</div>
-				<a href="instructions_fr">Instructions</a>
-				<a href="langs"><img src="icons/translation.png" alt="Other languages" width=36px height=36px></a>
+				<a href="instructions">Instructions</a>
+				<a href="lang/langs"><img src="lang/icons/translation.png" alt="Other languages" width=36px height=36px></a>
 			</div>
 		</div>
-		<script src="../scripts/jquery-3.4.1.min.js"></script>
-		<script src="../scripts/seedrandom.js"></script>
+		<script src="scripts/jquery-3.4.1.min.js"></script>
+		<script src="scripts/seedrandom.js"></script>
 		<script src="translations.js"></script>
 		<script> data = Swedish; </script>
 
@@ -54,13 +43,31 @@
 			<input type="range" min="0" max="1000" value="500" class="slider" id="guesser" oninput="guessdisp.value = Math.round(guesser.value/10)">
 			<output id="guessdisp">50</output>
 		</div>
-		<div id="board"></div>
+		<div id="board">
+			<center>
+				<table class="word">
+					<thead>
+						<tr>
+							<th>&#10229</th>
+							<th>&#10230</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="wordBoxes">
+							<td id="word1"></td>
+							<td id="word2"></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+		</div>
 		<div id="score"></div>
 		<div id="scoreboard">
 			<div class="divTable scoreboard">
 				<div class="divTableBody">
 					<div class="divTableRow">
-						<div class="divTableCell">Team 1
+						<div class="divTableCell">
+							<div contenteditable="true">Team 1</div>
 							<div>
 								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
 									-
@@ -75,7 +82,8 @@
 
 						</div>
 
-						<div class="divTableCell">Team 2
+						<div class="divTableCell">
+							<div contenteditable="true"> Team 2</div>
 							<div>
 								<button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
 									-
@@ -97,8 +105,8 @@
 
 		</div>
 
-		<script src="../scripts/board.js"></script>
-		<script src="../scripts/draw.js"></script>
+		<script src="scripts/board.js"></script>
+		<script src="scripts/draw.js"></script>
 		</div>
 
 	</body>
